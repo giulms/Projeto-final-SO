@@ -13,6 +13,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  background-color: #e6ecf4;
 }
 
 header {
@@ -25,8 +26,8 @@ header {
   justify-content: space-between;
   padding: 10px 100px;
   color: white;
-  border-bottom: 1px solid #243f54;
-  border-radius:0 0 10px 10px;
+  border: 10px solid #e6ecf4;
+  border-radius: 12px;
 
   img {
     width: 50px;
@@ -67,6 +68,70 @@ main {
   padding: 2rem;
 }
 
+footer {
+  background-color: #243f54;
+  text-align: center;
+  position: sticky;
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 0;
+  gap: 1rem;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    #basic-info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 5px;
+      font-size: small;
+
+      button {
+        width: fit-content;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: white;
+        margin-top: 10px;
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.2;
+        }
+      }
+
+      input {
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+
+    #msg-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: small;
+
+      textarea {
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+
+        height: 75px;
+      }
+    }
+  }
+}
+
 .montserrat {
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
@@ -92,11 +157,11 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 90px;
-  margin-top: -70px; 
+  padding-top: 100px;
+  margin-top: -70px;
   min-height: 100vh;
   margin-bottom: 20px;
-
+  margin-left: 80px;
   hgroup {
     width: 100%;
   }
@@ -172,8 +237,9 @@ main {
   height: 650px;
   margin-top: 35px;
   position: fixed;
-  left: 65rem;
+  left: 78rem;
   border-left: 1px solid #707070;
+  max-width: 200px;
 
   ul {
     color: #5d5d5d;
@@ -196,7 +262,6 @@ main {
 
         &:hover {
           font-weight: 600;
-          background-color: #eeeeee9f;
         }
       }
 
@@ -213,10 +278,11 @@ main {
       }
 
       &.current-content {
-        border-left: 2px solid #5d5d5d;
-        
+        border-left: 2px solid #243f54;
+
         a {
           font-weight: 600;
+          color: #243f54;
         }
       }
     }

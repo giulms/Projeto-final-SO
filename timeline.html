@@ -10,17 +10,17 @@
       rel="stylesheet"
     />
     <title>Historia / SO</title>
-    <link rel="stylesheet" href="./estilos/historia.css" />
-    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/historia.css" />
+    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon" />
   </head>
   <body class="montserrat">
     <header>
       <a href="./index.html">
         <img
-        src="./assets/icons8-old-computer-100.png"
-        alt="Icone de um computador"
-        id="imagem-menu"
-      />
+          src="./assets/icons8-old-computer-100.png"
+          alt="Icone de um computador"
+          id="imagem-menu"
+        />
       </a>
       <nav>
         <a href="./index.html" class="link">Inicio</a>
@@ -214,7 +214,28 @@
         </ul>
       </aside>
     </main>
-    <footer></footer>
+    <footer>
+      <form>
+        <div id="basic-info">
+          <label for="nome">Nome:</label>
+          <input placeholder=" Digite seu nome" type="text" id="nome" />
+
+          <label for="email">E-mail:</label>
+          <input placeholder=" Digite seu e-mail" type="email" name="email" />
+
+          <button type="submit">Enviar</button>
+        </div>
+        <div id="msg-container">
+          <label for="msg">O que você achou do nosso site?</label>
+          <textarea placeholder="Digite seu comentário" name="msg"></textarea>
+        </div>
+      </form>
+
+      <p id="mensagemfinalfooter">
+        Site produzido com intuito acadêmico | Todos os direitos reservados |
+        2024.
+      </p>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>

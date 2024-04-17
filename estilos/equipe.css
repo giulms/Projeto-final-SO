@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #243f54;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    color: white;
+    border-bottom: 1px solid #243f54;
+    border-radius: 0 0 10px 10px;
+  
+    img {
+      width: 50px;
+      margin-top: 5px;
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 0.75rem;
+      width: 30%;
+  
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.5rem;
+        border-radius: 5px;
+  
+        &:hover {
+          text-decoration: underline;
+          font-weight: 600;
+        }
+  
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+body{
+    background-color: #e6ecf4;
+    font-family: 'Open Sans';
+    width: 100v;  
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+h2{
+    /* border: 2px solid magenta; */
+    flex: 1 0 500px;
+    font-size: 26px;
+}
+
+.container{
+    background-color: #e6ecf4;
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding-top: 90px;
+}
+
+.box{
+    width: 500px;
+    height: 315px;
+    border-radius: 20px;
+    padding-left: 10px ;
+    padding-bottom: 15px;
+    /* border: 2px solid orange; */
+    background-color: #bad5f3;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box:hover {
+    box-shadow: 10px 10px 20px rgba(33,33,33,.2); 
+    width: 515px;
+  }
+
+.fotos{
+    width: 200px;
+    height: 225px;
+    /* border: 2px solid green; */
+    border-radius: 0px 0px 0px 15px;
+    
+}
+
+.linksPessoais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200px;
+    font-size: 18px;
+    /* border: 2px solid purple; */
+    flex: 2;
+    order: 1;
+    
+}
+
+.links{
+    text-decoration: none;
+    flex:1;
+
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    background-color: #13293b;
+    height: 100px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+#titulocomnav{
+    -ms-flex-align: center;
+}
+
+#navegacao{
+    order: 1;
+    margin-left: 135px;
+    margin-top: 5px;
+
+}
+
+.navigation{
+    margin: 10px;
+}
+
+
+#imagemcesarcabecalho{
+    display: flex;
+    height: 50px;
+    width: 60px;
+    margin-left: 50px;
+    margin-right: 90px;
+    margin-top: 25px;
+}
+
+#imagemportocabecalho{
+    display: flex;
+    margin-right: 90px;
+    margin-top: 3px;
+}
+
+#imagemembarquecabecalho{
+    margin-right: 200px;
+    height: 65px;
+    margin-top: 17px;
+}
+
+#textocabecalho{
+    display:flex;
+    margin-top: 10px;
+    font-size: 40px;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+#imageminstacabecalho{
+    width: 60px;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 25px;
+}
+
+#imagemslackcabecalho{
+    width: 60px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+#imagemlinkecabecalho{
+    width: 60px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+/* FIM DO CABECALHO */
+
+/*INICIO DO FOOTER*/
+footer{
+    background-color: #13293b;
+    text-align: center;
+    margin-top: 20px;
+    height: 150px;
+    position: sticky;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.msg{
+    height: 20px;
+    margin-top: 15px;
+}
+#nomeforms{
+    display: flex;
+    margin-left: 300px;
+}
+#mensagemfinalfooter {
+    position: relative;
+    bottom: -20px;
+}
+/*FINAL DO FOOTER*/
+
+
+

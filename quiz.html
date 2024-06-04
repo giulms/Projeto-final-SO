@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="assets/img/icone.ico" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz/SO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="atividade.js" defer></script>
+    <title>Quiz Sistemas Operacionais</title>
 </head>
 <body>
     
+
+<form id = "forms"name="meu_form">
+
+    <h1 id="titulo_quiz">QUIZ DOS SISTEMAS OPERACIONAIS</h1>
+
+    <label for="nome" id="identificacao">NOME DO PARTICIPANTE</label>
+    <input type="text" class = "caixa_resposta" id="identificacao"placeholder="Insira seu nome" required="required" name="nome" />
+    
+    <label for="email">PRIMEIRA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta1" placeholder="Resposta_Q1" name="resposta1" />
+
+    <label for="fone">SEGUNDA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta2" placeholder="Resposta_Q2" name="resposta2" />
+    
+    <label for="fone">TERCEIRA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta3" placeholder="Resposta_Q3" name="resposta3" />
+    
+    <label for="fone">QUARTA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta4" placeholder="Resposta_Q4" name="resposta4" />
+    
+    <label for="fone">QUINTA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta5" placeholder="Resposta_Q5" name="resposta5" />
+
+    <label for="fone">SEXTA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta6" placeholder="Resposta_Q6" name="resposta6" />
+
+    <label for="fone">SÉTIMA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta7" placeholder="Resposta_Q7" name="resposta7" />
+
+    <label for="fone">OITAVA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta8" placeholder="Resposta_Q8" name="resposta8" />
+
+    <label for="fone">NONA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta9" placeholder="Resposta_Q9" name="resposta9" />
+
+    <label for="fone">DÉCIMA QUESTÃO</label>
+    <input type="text" class = "caixa_resposta" id="resposta10" placeholder="Resposta_Q10" name="resposta10" />
+
+    <label for="fone">O QUE ACHOU DO QUIZ?</label>
+    <input type="text" class = "caixa_resposta" id="opiniao_quiz" placeholder="Resposta_OPINIAO" name="opiniao" />
+
+
+    <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+
+  </form>
+  <footer id="rodape">Este site é de propridade acadêmica. | Todos os direitos reservados aos autores. </footer>
+
 </body>
 </html>

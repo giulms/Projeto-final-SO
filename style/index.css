@@ -156,11 +156,14 @@ width: 100vw;
 .imagem-Inicial:hover {
   scale: 1.5;
 }
-.img-3 {
+.img-2 {
   height: 145px;
 }
-.img-3:hover {
+.img-2:hover {
   scale: 1.5;
+}
+.img-3 {
+  width: 250px;
 }
 .img-Inicio {
   text-align: center;

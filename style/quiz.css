@@ -1,38 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#forms{
+body {
+    font-family: monospace;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #243f54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+    color: white;
+    border: 10px solid #e6ecf4;   
+  
+    img {
+      width: 50px;
+      margin-top: 5px;
+      position: relative;
+      left: -21rem;
+    }
+  }
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+form {
+    font-weight: bold;
+}
+
+.question-box {
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, sans-serif;
-    gap: 5px;
-    margin-left: 15px;
-}
-#titulo_quiz{
-    display: flex;
     justify-content: center;
-}
-#identificacao{
-    display: flex;
-    flex-direction: row;
-}
-.caixa_resposta{
-    width: 120px;
-    margin-bottom: 20px;
-    font-family: Josefin-sans, sans-serif;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1.5rem;
+
+    input {
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+
+    button {
+        padding: 10px;
+        border: 1px solid #243f54;
+        border-radius: 3px;
+        background-color: #243f54;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &.hidden {
+        display: none;
+    }
 }
 
-.enviar{
-    height: 25px;
-    width:80px;
-    font-family: Josefin-sans, sans-serif;
-}
-
-#rodape{
-    display: flex;
-    padding: 20px;
-    margin-top: 30px;
-    font-family: Josefin-sans, sans-serif;
-    justify-content: center;
-    font-size: 20px;
-}

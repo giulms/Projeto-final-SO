@@ -1,60 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/quiz.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/quiz.css" />
     <script src="atividade.js" defer></script>
     <title>Quiz Sistemas Operacionais</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img
+          src="./assets/icons8-old-computer-100.png"
+          alt="Icone de um computador"
+          id="imagem-menu"
+        />
+      </a>
+      <h1>QUIZ EVOLUÇÃO SISTEMAS OPERACIONAIS</h1>
+    </header>
+    <main>
+      <form id="questions-form">
+        <label for="player-name" class="question-box"
+          >Nome do participante
+          <input
+            type="text"
+            id="player-name"
+            placeholder="Insira seu nome"
+            required="required"
+            name="player-name"
+            value=""
+          />
+          <button type="button" id="start-btn">Iniciar Quiz</button>
+        </label>
 
-<form id = "forms"name="meu_form">
+        <label for="first-question" class="question-box hidden"
+          >Quando Foi Lançado o Multics?
+          <input type="text" placeholder="Sua resposta..." name="first-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <h1 id="titulo_quiz">QUIZ DOS SISTEMAS OPERACIONAIS</h1>
+        <label for="second-question" class="question-box hidden"
+          >Quem Desenvolveu o OS/360
+          <input type="text" placeholder="Sua resposta..." name="second-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="nome" id="identificacao">NOME DO PARTICIPANTE</label>
-    <input type="text" class = "caixa_resposta" id="identificacao"placeholder="Insira seu nome" required="required" name="nome" />
-    
-    <label for="email">PRIMEIRA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta1" placeholder="Resposta_Q1" name="resposta1" />
+        <label for="third-question" class="question-box hidden"
+          >Qual o primeiro sistema operacional moderno?
+          <input type="text" placeholder="Sua resposta..." name="third-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">SEGUNDA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta2" placeholder="Resposta_Q2" name="resposta2" />
-    
-    <label for="fone">TERCEIRA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta3" placeholder="Resposta_Q3" name="resposta3" />
-    
-    <label for="fone">QUARTA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta4" placeholder="Resposta_Q4" name="resposta4" />
-    
-    <label for="fone">QUINTA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta5" placeholder="Resposta_Q5" name="resposta5" />
+        <label for="fourth-question" class="question-box hidden"
+          >Complete a sentença: "4ª geração
+          O __________, foi lançado pela Microsoft em 1981, tornando-se o sistema operacional dominante para PCs durante a década de 1980 e início dos anos 1990."
+          <input type="text" placeholder="Sua resposta..." name="fourth-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">SEXTA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta6" placeholder="Resposta_Q6" name="resposta6" />
+        <label for="fifth-question" class="question-box hidden"
+          >Qual o ano de lançamento do MacOS?
+          <input type="text" placeholder="Sua resposta..." name="fifth-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">SÉTIMA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta7" placeholder="Resposta_Q7" name="resposta7" />
+        <label for="sixth-question" class="question-box hidden"
+          >Em qual geração foi lançado o GNU/Linux?
+          <input type="text" placeholder="Sua resposta..." name="sixth-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">OITAVA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta8" placeholder="Resposta_Q8" name="resposta8" />
+        <label for="seventh-question" class="question-box hidden"
+          >Em qual ano foi lançado o Windows XP pela Microsoft?
+          <input type="text" placeholder="Sua resposta..." name="seventh-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">NONA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta9" placeholder="Resposta_Q9" name="resposta9" />
+        <label for="eighth-question" class="question-box hidden"
+          >Qual o primeiro sistema operacional mobile moderno?
+          <input type="text" placeholder="Sua resposta..." name="eighth-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">DÉCIMA QUESTÃO</label>
-    <input type="text" class = "caixa_resposta" id="resposta10" placeholder="Resposta_Q10" name="resposta10" />
+        <label for="ninth-question" class="question-box hidden"
+          >Complete a sentença: O IBM Q System One é um sistema operacional focado em computação ______.
+          <input type="text" placeholder="Sua resposta..." name="ninth-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="button" class="next-btn">Próxima</button>
+        </label>
 
-    <label for="fone">O QUE ACHOU DO QUIZ?</label>
-    <input type="text" class = "caixa_resposta" id="opiniao_quiz" placeholder="Resposta_OPINIAO" name="opiniao" />
-
-
-    <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-
-  </form>
-  <footer id="rodape">Este site é de propridade acadêmica. | Todos os direitos reservados aos autores. </footer>
-
-</body>
+        <label for="tenth-question" class="question-box hidden"
+          >Qual o sistema operacional mais recente lançado pela Microsoft?
+          <input type="text" placeholder="Sua resposta..." name="tenth-question" />
+          <button type="button" class="prev-btn">Anterior</button>
+          <button type="submit" id="submit-btn">Finalizar Quiz</button>
+        </label>
+      </form>
+    </main>
+    <footer id="rodape">
+      Este site é de propridade acadêmica. | Todos os direitos reservados aos
+      autores.
+    </footer>
+    <script src="./quiz.js"></script>
+  </body>
 </html>
